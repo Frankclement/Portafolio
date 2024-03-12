@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&display=swap');
+:root {
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    --button-color: #8E7BEF;
+    --text-dark: #FFFFFF;
+    --highligth-color: #FCDA68;
+    --text-secondary: #423F40;
+    --background-color: #222438;
+    --background-color-secondary: #222438;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    background-color: #222438;
+}
+
+body {
+    margin: 0;
+}
+
+input {
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+ul,
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
