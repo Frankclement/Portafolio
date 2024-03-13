@@ -1,28 +1,75 @@
 .info {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #ffffff;
 }
 
 .info__I {
+    width: 80%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info__img {
+    width: 50%;
+    padding: 8em;
+    border-radius: 20%;
+}
+
+.info__container {
+    width: 50%;
+    padding: 8em 0;
 }
 
 .info__title {
-    padding: 0.5em;
+    text-align: center;
     font-size: 2em;
+    color: #ED5B4D;
 }
 
 .info__description {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 50%;
+    text-align: start;
+    padding: 2em 0 2em 0;
 }
 
+.info__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    border: 0.2em solid red;
+    margin: 0.4em;
+}
+
+.info__list-div {
+    padding-bottom: 1em;
+    font-weight: 400;
+}
+
+.info__list-span {
+    font-weight: 300;
+}
+
+.info__btn {
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 10em;
+    height: 2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #10B0DB;
+}
+
+
+/*inforamcion snre las habilidades*/
+
 .info__hability {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,37 +79,77 @@
     text-align: center;
     padding: 1em;
     font-size: 2em;
+    color: #ED5B4D;
 }
 
 .hability__list {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    width: 60%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 2em 0;
 }
 
-.list__div {
-    background-color: #C2C2C2;
+.hability__list-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border: none;
     border-radius: 0.5em;
 }
 
-.list__title {
-    text-align: center;
-    font-size: 1em;
-    padding: 1em;
+.img-icon {
+    height: 40px;
+    width: 30px;
 }
 
-.list__description {
-    font-size: 1em;
-    font-weight: 100;
-    padding: 1em 3em;
+.name {
+    font-weight: 400;
+}
+
+.i-1 {
+    background-color: #ED5B4D;
+}
+
+.i-2 {
+    background-color: #0450A7;
+}
+
+.i-3 {
+    background-color: #697EEE;
+}
+
+.i-4 {
+    background-color: #F9AF1F;
+}
+
+.i-5 {
+    background-color: #28C0EE;
+}
+
+.i-6 {
+    background-color: #F33C2F;
+}
+
+.i-7 {
+    background-color: #2F74C0;
+}
+
+.i-8 {
+    background-color: #951C0B;
+}
+
+.i-9 {
+    background-color: #157F82;
 }
 
 .info__experience {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +164,17 @@
 }
 
 .experience {
-    width: 80%;
-    height: 10em;
+    width: 100%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 1em;
+    flex-wrap: wrap;
 }
 
 .experience__item {
-    width: 33.3%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,8 +182,8 @@
 }
 
 .experience__img {
-    width: 120px;
-    height: 80px;
+    width: 150px;
+    height: 130px;
     border: 1em;
     background-color: aliceblue;
     border-radius: 50%;
@@ -117,14 +204,20 @@
 }
 
 .experience__stat_label1 {
-    color: olivedrab;
+    color: #0450A7;
     font-weight: 700;
     padding: 0.2em;
 }
 
+.experience__p {
+    font-size: 0.8em;
+    color: white;
+    font-weight: 200;
+}
+
 .experience__stat__age {
-    color: #C2C2C2;
-    font-weight: 900;
+    color: #f19d9d;
+    font-weight: 700;
     padding: 0.1em;
 }
 
@@ -148,8 +241,7 @@
 
 .portafolio {
     width: 80%;
-    height: 20em;
-    min-width: 300px;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,4 +353,11 @@
 
 .task__li-name {
     font-size: 1em;
+}
+
+@media(max-width:780px) {
+    .portafolio {
+        display: flex;
+        flex-direction: column;
+    }
 }
