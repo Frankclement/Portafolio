@@ -29,6 +29,7 @@
 html {
     font-family: 'Lato', sans-serif;
     background-color: #222438;
+    padding: 0;
 }
 
 body {
@@ -56,4 +57,18 @@ hr {
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+@media(max-width:780px) {
+    * {
+        box-sizing: border-box;
+    }
+    html {
+        font-family: 'Lato', sans-serif;
+        background-color: #222438;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+    }
 }
