@@ -187,6 +187,15 @@
 }
 
 @media(max-width:780px) {
+    .header {
+        background-color: #333;
+        color: white;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 50%;
+        padding: 0;
+    }
     .logo-nav-container {
         display: flex;
         flex-direction: column;
@@ -200,7 +209,8 @@
     }
     .navigation {
         width: 100%;
-        margin: 2rem 2rem;
+        margin: 1rem 2rem;
+        padding-left: 1em;
     }
     .navigation ul {
         display: none;
@@ -218,7 +228,7 @@
         border-radius: 5px;
     }
     .navigation ul li a:hover {
-        background: #ED5B4D;
+        width: 40%;
     }
     .portada__title {
         font-size: 1.5em;
